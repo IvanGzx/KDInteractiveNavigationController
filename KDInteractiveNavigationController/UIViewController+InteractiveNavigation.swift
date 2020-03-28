@@ -10,15 +10,15 @@ import UIKit
 
 private var interactiveNavigationBarHiddenAssociationKey: UInt8 = 0
 
-extension UIApplication {
-    override open var next: UIResponder? {
-        UIViewController.awake
-        return super.next
-    }
-}
+//extension UIApplication {
+//    override open var next: UIResponder? {
+//        UIViewController.awake
+//        return super.next
+//    }
+//}
 
 extension UIViewController {
-    static let awake : Void  = {
+    public static let awake : Void  = {
         replaceInteractiveMethods()
         return
     }()

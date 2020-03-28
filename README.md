@@ -70,6 +70,14 @@ Run `carthage` to build the framework and drag the built `KDInteractiveNavigatio
 > in UIViewController `viewDidLoad` method
 
 ```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {   
+    // To enable KDInteractiveNavigation
+    UIViewController.awake
+
+    return true
+}
+
+
 override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
